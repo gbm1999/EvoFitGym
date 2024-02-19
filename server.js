@@ -20,7 +20,7 @@ app.get('/galeria-imagenes', (req, res) => {
     res.sendFile(path.join(__dirname, 'galeriaImagenes.html'));
 });
 
-app.get('/servicio', (req, res) => {
+app.get('/servicios', (req, res) => {
     res.sendFile(path.join(__dirname, 'servicios.html'));
 });
 
@@ -32,7 +32,7 @@ app.get('/asesoramiento-nutricional', (req, res) => {
     res.sendFile(path.join(__dirname, 'servicio1.html'));
 });
 
-app.get('/tarifa', (req, res) => {
+app.get('/tarifas', (req, res) => {
     res.sendFile(path.join(__dirname, 'tarifa.html'));
 });
 
