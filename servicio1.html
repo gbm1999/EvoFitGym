@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Agrega la biblioteca Email.js -->
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <title>Evofit</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheets/styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <style>
+        body {
+            font-family: 'Poppins';font-size: 22px;
+        }
+        </style>
+        <link href="https://fonts.cdnfonts.com/css/montalban" rel="stylesheet">
+                
+</head>
+<body>
+
+    <nav class="topnav" id="myTopnav">
+        <img src="img/Logo-Evofit.png" alt="Logo" />
+        <a href="/">Inicio</a>
+        <a href="/conocenos">Conócenos</a>
+        <a href="/servicio">Servicios</a>
+        <a href="/tarifa">Tarifa</a>
+        <a href="/contacto">Contacto</a>
+        <a href="/galeria-imagenes">Galería imágenes</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+    </nav>
+
+<section></section>
+<section>
+
+    <div id="servicios" class="centered-section">
+    <div class="columns-container">
+        <div class="column">
+            <div>
+                <h3 style="color: rgb(229, 6, 2); text-align: center; font-family: Montalban; font-size: 20px !important;">Asesoramiento Nutricional</h3>
+            </div>
+            <img src="img/nutri.png" alt="Imagen 2">
+        </div>
+        <div class="column">
+                    <!-- Formulario de contacto -->
+                    <form id="contactForm">
+                        <label style="font-family: montalban; color: rgb(229, 6, 2); font-size: 24px !important;" for="titulo">Contáctanos:</label>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="from_name" name="from_name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telephone" name="telephone" required>
+
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="message" name="message" required></textarea>
+
+                        <button type="button" onclick="sendEmail()">Enviar</button>
+                    </form>
+        </div>
+    </div>
+    </div>
+</section>
+
+<div id="desc1" style="text-align: left !important; ">
+    <p><span>
+
+        Es importante asegurarse de que estás recibiendo los nutrientes y calorías adecuados para tu nivel de actividad física. Esto significa que si vas al gimnasio regularmente, necesitarás una mayor cantidad de carbohidratos, proteínas, grasas saludables y vitaminas para mantenerte saludable. Si no estás recibiendo suficientes nutrientes, tu cuerpo no podrá recuperarse adecuadamente del entrenamiento y tu rendimiento disminuirá.
+    </span></p>
+    <p><span>
+        Para eso contamos con Jess Moya, nuestra encargada del asesoramiento nutricional. Jess es una chica muy ligada al mundo deportivo y a la vida saludable, ya que desde hace años es atleta y compite en Crossfit. Cuenta con la titulación de técnico superior de nutrición y dietética y laboratorio clínico y médico. Tiene la especialidad en nutrición deportiva y de alto rendimiento, por eso consideramos que es la persona idónea que puede ayudarte a mejorar tu físico y rendimiento deportivo.
+    </span></p>
+    <p><span>
+        ¡Confía en ella!
+        </span></p>
+</div>
+
+<footer>
+    <div class="footer-column">
+        <h3 style="font-family: Montalban;">DÓNDE ESTAMOS</h3>
+        <p>Calle Extremadura 3, 03158</p>
+        <p>Catral, Alicante</p>
+    </div>
+    <div class="footer-column">
+        <h3  style="font-family: Montalban;">CONTACTO</h3>
+        <p>646 667 332</p>
+        <p>evofitcatral@gmail.com</p>
+        <div class="social-icons">
+            <a href="https://instagram.com/evofitcatral/?hl=es" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://facebook.com/evofitcatral" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://web.whatsapp.com/send?phone=+34646667332" target="_blank"><i class="fa fa-whatsapp"></i></a>
+            <a href="mailto:evofitcatral@gmail.com"><i class="fa fa-envelope"></i></a>
+        </div>
+    </div>
+    <div class="footer-column">
+        <h3  style="font-family: Montalban;">HORARIO</h3>
+        <p><strong>Lun - Jueves:</strong> 09:00 - 15:00, 17:00 - 21:30</p>
+        <p><strong>Viernes:</strong> 09:00 - 15:00, 17:00 - 21:00</p>
+        <p><strong>Sábado:</strong> 09:30 - 13:00</p>
+        <p><strong>Domingo:</strong> Cerrado</p>
+    </div>
+
+
+
+</footer>
+<!-- ... (remaining code) -->
+
+
+<!-- Agrega este código al final de la sección <body> -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <p>¡Correo enviado con éxito!</p>
+        </div>
+      </div>
+      
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    <!-- Agrega el script para enviar el correo con Email.js -->
+
+    emailjs.init("_B2lPRkB3Bae4q9Ax");  // Reemplaza "user_your_emailjs_user_id" con tu User ID de Email.js
+
+    function sendEmail() {
+        const form = document.getElementById("contactForm");
+
+        emailjs.sendForm("service_bdpu8dy", "template_5bc3hz5", form)
+            .then(response => {
+                console.log("Correo enviado con éxito", response);
+                openModal();
+                // Puedes agregar aquí acciones adicionales después de enviar el correo
+            })
+            .catch(error => {
+                console.error("Error al enviar el correo", error);
+                // Puedes agregar aquí acciones adicionales en caso de error
+            });
+    }
+
+    function openModal() {
+document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+document.getElementById("myModal").style.display = "none";
+}
+
+    </script>
+</body>
+</html>
