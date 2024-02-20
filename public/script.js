@@ -46,7 +46,7 @@ document.getElementById("myModal").style.display = "none";
 function goToPage(event) {
   const hrefUrl = event.target.getAttribute('href');
   window.title = location.pathname.slice(1);
-  window.history.pushState({}, location.pathname.slice(1), hrefUrl) // Update URL as well as browser history.
+  window.history.pushState({}, window.title, hrefUrl) // Update URL as well as browser history.
 }
 
 // Enable client-side routing for all links on the page
