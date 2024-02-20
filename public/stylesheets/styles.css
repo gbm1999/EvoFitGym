@@ -22,6 +22,7 @@ nav {
     display: flex;
     align-items: center; /* Centra verticalmente los elementos */
     justify-content: center; /* Centra horizontalmente los elementos */
+    z-index: 1000; /* Add this line */
 }
 
 .topnav {
@@ -126,13 +127,19 @@ img {
 
 .column {
     flex: 1;
-    margin: 0 10px; /* Añade un espacio entre las columnas */
+    margin: 0 10px;
     margin: 0 auto;
+    overflow: hidden; /* Add this line */
 }
 
 .column img {
-    width: 70%; /* Ajusta el tamaño de la imagen para llenar el contenedor */
-    height: 85%; /* Establece la altura deseada para las imágenes */
+    width: 70%;
+    height: 85%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.column:hover img.scale-on-hover {
+    transform: scale(1.1);
 }
 
 footer {
