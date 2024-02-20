@@ -123,13 +123,13 @@ img {
     justify-content: space-between;
     width: 80%; /* Ajusta el ancho según tus necesidades */
     margin-top: 20px; /* Añade un espacio entre la sección de Servicios y las columnas */
+    overflow: hidden; /* Add this line */
 }
 
 .column {
     flex: 1;
     margin: 0 10px;
     margin: 0 auto;
-    overflow: hidden; /* Add this line */
 }
 
 .column img {
