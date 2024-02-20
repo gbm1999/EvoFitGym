@@ -126,42 +126,6 @@
       </div>
       
 
-    <script>
-        function myFunction() {
-          var x = document.getElementById("myTopnav");
-          if (x.className === "topnav") {
-            x.className += " responsive";
-          } else {
-            x.className = "topnav";
-          }
-        }
-        <!-- Agrega el script para enviar el correo con Email.js -->
-
-        emailjs.init("_B2lPRkB3Bae4q9Ax");  // Reemplaza "user_your_emailjs_user_id" con tu User ID de Email.js
-
-        function sendEmail() {
-            const form = document.getElementById("contactForm");
-
-            emailjs.sendForm("service_bdpu8dy", "template_5bc3hz5", form)
-                .then(response => {
-                    console.log("Correo enviado con éxito", response);
-                    openModal();
-                    // Puedes agregar aquí acciones adicionales después de enviar el correo
-                })
-                .catch(error => {
-                    console.error("Error al enviar el correo", error);
-                    // Puedes agregar aquí acciones adicionales en caso de error
-                });
-        }
-
-        function openModal() {
-    document.getElementById("myModal").style.display = "block";
-}
-
-function closeModal() {
-    document.getElementById("myModal").style.display = "none";
-}
-
-        </script>
+      <script src="/script.js"></script>
 </body>
 </html>
