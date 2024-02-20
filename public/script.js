@@ -45,6 +45,7 @@ document.getElementById("myModal").style.display = "none";
 }
 function goToPage(event) {
   const hrefUrl = event.target.getAttribute('href');
+  window.title = location.pathname.slice(1);
   window.history.pushState({}, window.title, hrefUrl) // Update URL as well as browser history.
 }
 
