@@ -24,11 +24,11 @@ app.get('/servicios', (req, res) => {
     res.sendFile(path.join(__dirname, 'servicios.html'));
 });
 
-app.get('/entrenamientos-personales', (req, res) => {
+app.get('/servicios/entrenamientos-personales', (req, res) => {
     res.sendFile(path.join(__dirname, 'servicio2.html'));
 });
 
-app.get('/asesoramiento-nutricional', (req, res) => {
+app.get('/servicios/asesoramiento-nutricional', (req, res) => {
     res.sendFile(path.join(__dirname, 'servicio1.html'));
 });
 
