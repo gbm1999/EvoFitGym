@@ -142,7 +142,6 @@ img {
     width: 274px;
     height: 85%;
     transition: transform 0.3s ease-in-out;
-    margin: 5px;
 }
 
 .column:hover img.scale-on-hover {
