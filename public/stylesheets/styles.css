@@ -52,7 +52,8 @@ footer {
 }
 
 nav img {
-    max-height: 40px; /* Ajusta la altura según tus necesidades */
+    max-height: 50px; /* Ajusta la altura según tus necesidades */
+    margin-right: 35px;
 }
 nav .icon{
     display: none;
@@ -233,6 +234,7 @@ footer {
 
     nav a {
         margin: 1em 0; /* Añade espacio entre los elementos */
+        margin-right: 35px;
     }
     footer {
         display: grid;
