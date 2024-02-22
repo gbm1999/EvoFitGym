@@ -33,7 +33,7 @@ nav {
 nav a {
     color: #fff;
     text-decoration: none;
-    margin: 0 1em;
+    margin: 0 0.5em;
 }
 
 section {
@@ -242,7 +242,7 @@ footer {
     }
 
     nav a {
-        margin: 0 0.4em;
+        margin: 1em 0;
         margin-right: 35px;
     }
     
