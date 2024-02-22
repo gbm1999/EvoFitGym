@@ -53,7 +53,7 @@ footer {
 
 nav img {
     max-height: 50px; /* Ajusta la altura según tus necesidades */
-    margin-right: 35px;
+    margin-right: 5px;
 }
 nav .icon{
     display: none;
@@ -230,6 +230,11 @@ footer {
 @media only screen and (max-width: 800px) {
     nav {
         flex-direction: column; /* Apila los elementos verticalmente */
+    }
+
+    nav img {
+        max-height: 50px; /* Ajusta la altura según tus necesidades */
+        margin-right: 35px;
     }
 
     nav a {
