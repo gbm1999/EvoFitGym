@@ -138,6 +138,12 @@ img {
     transition: transform 0.3s ease-in-out;
 }
 
+.column-2 img {
+    width: 95%;
+    height: 85%;
+    transition: transform 0.3s ease-in-out;
+}
+
 .column:hover img.scale-on-hover {
     transform: scale(1.1);
 }
@@ -294,6 +300,9 @@ footer {
 
     .column {
         margin-bottom: 100px; /* Añade espacio entre las columnas apiladas */
+    }
+    .column img {
+        width: 100%;
     }
 }
 
