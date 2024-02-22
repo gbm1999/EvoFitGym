@@ -139,7 +139,7 @@ img {
 }
 
 .column-2 img {
-    width: 95%;
+    width: 274px;
     height: 85%;
     transition: transform 0.3s ease-in-out;
 }
