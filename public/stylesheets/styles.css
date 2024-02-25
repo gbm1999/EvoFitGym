@@ -78,6 +78,10 @@ img {
     font-weight: 400 !important;
     text-align: left;
   }
+
+  #servicios2{
+    max-width: 876px !important;
+  }
 .button {
     display: inline-block;
     padding: 15px 25px;
@@ -231,7 +235,7 @@ footer {
     }
 
 /* Consulta de medios para pantallas más pequeñas (ejemplo: dispositivos móviles) */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 756px) {
     nav {
         flex-direction: column; /* Apila los elementos verticalmente */
     }
@@ -303,7 +307,7 @@ footer {
   
 
 /* Media query para pantallas más pequeñas */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 756px) {
     .columns-container {
         flex-direction: column; /* Cambia la dirección de las columnas a apiladas verticalmente */
         align-items: stretch; /* Estira las columnas para ocupar todo el ancho */
@@ -313,11 +317,12 @@ footer {
         margin-bottom: 100px; /* Añade espacio entre las columnas apiladas */
     }
     .column img {
-        width: 100%;
+        width: 274px;
+        height: 85%;
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 756px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
@@ -328,7 +333,7 @@ footer {
     }
   }
   
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 756px) {
     .topnav.responsive {position: fixed;}
     .topnav.responsive .icon {
       position: absolute;
