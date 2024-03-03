@@ -1,0 +1,3 @@
+# Sitemap is also available on /sitemap.xml
+Sitemap: https://evofitcatral.es/sitemap.xml
+User-agent: *
